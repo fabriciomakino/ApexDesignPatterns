@@ -9,7 +9,7 @@ public with sharing class AccountBuilderClientCode {
     public static Account insertAccountExample() {
         
         AccountBuilder accountBuilder = new AccountBuilder();
-        accountBuilder.setName('AccountBuilder Test');
+        accountBuilder.setName('Builder Example');
         accountBuilder.setPhone('(000) 000-0000');
 
         Account account = accountBuilder.getResult();
