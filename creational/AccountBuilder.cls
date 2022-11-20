@@ -7,10 +7,6 @@
 public with sharing class AccountBuilder {
     private Account account = new Account();
 
-    public void newAccount() {
-        this.account = new Account();
-    }
-
     public AccountBuilder setName(String name) {
         this.account.Name = name;
         return this;
