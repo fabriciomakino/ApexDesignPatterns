@@ -11,12 +11,14 @@ public with sharing class AccountBuilder {
         this.account = new Account();
     }
 
-    public void setName(String name) {
+    public AccountBuilder setName(String name) {
         this.account.Name = name;
+        return this;
     }
 
-    public void setPhone(String phone) {
+    public AccountBuilder setPhone(String phone) {
         this.account.Phone = phone;
+        return this;
     }
 
     public Account getResult() {

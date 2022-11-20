@@ -8,11 +8,11 @@ public with sharing class AccountBuilderClientCode {
 
     public static Account insertAccountExample() {
         
-        AccountBuilder accountBuilder = new AccountBuilder();
-        accountBuilder.setName('Builder Example');
-        accountBuilder.setPhone('(000) 000-0000');
-
-        Account account = accountBuilder.getResult();
+        Account account = 
+            new AccountBuilder()
+                .setName('Builder Example')
+                .setPhone('(000) 000-0000')
+                .getResult();
 
         insert account;
 
